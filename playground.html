@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html {
+            font-size:62.5%;
+        }
+
+        .column{
+            border-right:2px solid red;
+            height:100vh;
+            width:100px;
+        }
+
+        .col7{
+            border:none;
+        }
+
+        .colContainer{
+            /* display: grid;
+            grid-template-columns: 70px; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .col5,
+        .col4{
+            flex-grow: 2;
+        }
+
+        .col6,
+        .col2 {
+            flex-grow: 1;
+        }
+
+        .content{
+            position: relative;
+        }
+
+        .imgContainer{
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: 170px;
+        }
+
+        img {
+            width:200%;
+        }
+        
+        .content h1,
+        .content h2 {
+            position: absolute;
+            left: -20px;
+        }
+
+        .content h1 {
+            top: 290px;
+            font-size: 5rem;
+            width:40%;
+        }
+
+        .content h2 {
+            top:310px;
+            font-size: 3rem;
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="colContainer">
+        <div class="col1 column">1</div>
+        <div class="col2 column">2</div>
+        <div class="col3 column">3</div>
+        <div class="col4 column">4
+            <div class="content">
+                <h1>PATRICK SHERRARD</h1>
+                <h2>Web Developer</h2>
+                <div class="imgContainer">
+                    <img src="./assets/topographicMap.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="col5 column">5</div>
+        <div class="col6 column">6</div>
+        <div class="col7 column">7</div>
+    </div>
+    
+</body>
+</html>
