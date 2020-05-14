@@ -415,17 +415,46 @@ header .bottomHeader .designLine {
 .projectsPage .projectOne,
 .projectsPage .projectTwo,
 .projectsPage .projectThree {
-  color: red;
-  margin-bottom: 80px;
-  padding-bottom: 50px;
+  color: #252525;
+  margin-bottom: 30px;
+  padding-bottom: 150px;
 }
 
-.projectsPage .projectOneInfo {
+.projectsPage .projectOne h3,
+.projectsPage .projectTwo h3,
+.projectsPage .projectThree h3 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  margin-left: 110px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.projectsPage .projectOne p,
+.projectsPage .projectTwo p,
+.projectsPage .projectThree p {
+  font-size: 1.5rem;
+}
+
+.projectsPage .projectOne:hover h3,
+.projectsPage .projectTwo:hover h3,
+.projectsPage .projectThree:hover h3 {
+  color: #82c9e7;
+  border-bottom: 2px solid #252525;
+}
+
+.projectsPage .projectOneInfo,
+.projectsPage .projectTwoInfo,
+.projectsPage .projectThreeInfo {
   position: absolute;
+  margin-top: 20px;
   right: 120px;
 }
 
-.projectsPage .projectOneInfo .buttons {
+.projectsPage .projectOneInfo .buttons,
+.projectsPage .projectTwoInfo .buttons,
+.projectsPage .projectThreeInfo .buttons {
   text-align: center;
 }
 

@@ -8,6 +8,8 @@ portfolio = {}
 //Have three different projectInfos for each project
 //hover over this toggle projectOne get projectInfo1 shown
 
+//Maybe use time out feature for when css animation is done?
+
 portfolio.projectHover = () => {
     $(".projectOneInfo").hide(); 
     $(".projectTwoInfo").hide();
@@ -54,14 +56,3 @@ $(function () {
     portfolio.init();
 });
 
-
-
-
-// portfolio.projectHover = () => {
-//     $(".projectInfo").hide();
-//     $(".projects").hover(function () {
-//         $(this).toggleClass("projectFocus");
-//         console.log('hovered');
-//         $(".projectInfo").show();
-//     })
-// }

@@ -12,13 +12,53 @@
     .projectOne,
     .projectTwo,
     .projectThree {
-        color:red;
-        margin-bottom:80px;
-        padding-bottom: 50px;
+        color:$primaryDark;
+        margin-bottom:30px;
+        padding-bottom: 150px;
+
+
+        // .circle {
+        //     width:15px;
+        //     height:15px;
+        //     background-color: $primaryDark;
+        //     border-radius: 50%;
+        //     position: absolute;
+        // }
+       
+
+        h3 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-left:110px;
+            padding-left:30px;
+            text-transform: uppercase;
+            border-bottom:2px solid transparent;
+        }
+
+        p {
+            font-size:1.5rem;
+        }
+
+        // h3:hover {
+        //     color:$accentColor;
+        // }
     }
 
-    .projectOneInfo {
+    .projectOne:hover,
+    .projectTwo:hover,
+    .projectThree:hover {
+
+        h3 {
+            color:$accentColor;
+            border-bottom:2px solid $primaryDark;
+        }
+    }
+
+    .projectOneInfo,
+    .projectTwoInfo,
+    .projectThreeInfo {
         position: absolute;
+        margin-top:20px;
         right:120px;
 
         .buttons {
