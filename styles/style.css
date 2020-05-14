@@ -232,6 +232,27 @@ html {
   width: 80%;
 }
 
+button {
+  border: 2px solid #D8D8D8;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -10px 10px #252525;
+          box-shadow: -10px 10px #252525;
+  color: #252525;
+  padding: 10px 30px;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -10px 10px #82c9e7;
+          box-shadow: -10px 10px #82c9e7;
+  color: #82c9e7;
+}
+
 header {
   background-image: url(../assets/homeBackground.jpg);
   height: 100vh;
@@ -261,6 +282,10 @@ header h2 {
   font-size: 4rem;
   color: #82c9e7;
   margin-top: 5px;
+}
+
+header a {
+  color: #252525;
 }
 
 header .heading {
@@ -395,6 +420,10 @@ header .bottomHeader .designLine {
   text-transform: uppercase;
 }
 
+.aboutPage button {
+  margin-top: 40px;
+}
+
 .projectsPage {
   background-image: url(../assets/projectsBackground.jpg);
   height: 100vh;
@@ -416,25 +445,31 @@ header .bottomHeader .designLine {
 .projectsPage .projectTwo,
 .projectsPage .projectThree {
   color: #252525;
-  margin-bottom: 30px;
-  padding-bottom: 150px;
 }
 
 .projectsPage .projectOne h3,
 .projectsPage .projectTwo h3,
 .projectsPage .projectThree h3 {
-  font-size: 3.5rem;
+  font-size: 8rem;
   letter-spacing: 2px;
   margin-left: 110px;
   padding-left: 30px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
 }
 
 .projectsPage .projectOne p,
 .projectsPage .projectTwo p,
 .projectsPage .projectThree p {
   font-size: 1.5rem;
+}
+
+.projectsPage .projectOne:hover,
+.projectsPage .projectTwo:hover,
+.projectsPage .projectThree:hover {
+  padding-bottom: 250px;
 }
 
 .projectsPage .projectOne:hover h3,
@@ -505,53 +540,32 @@ header .bottomHeader .designLine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.skillsPage .skillsContainer .rowOne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.skillsPage .skillsContainer .rowTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.skillsPage .skillsContainer .rowThree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.skillsPage .skillsContainer .rowOne,
-.skillsPage .skillsContainer .rowTwo,
-.skillsPage .skillsContainer .rowThree {
-  margin-top: 70px;
+.skillsPage .skillsContainer .columnOne,
+.skillsPage .skillsContainer .columnTwo,
+.skillsPage .skillsContainer .columnThree,
+.skillsPage .skillsContainer .columnFour {
+  margin-top: 10px;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .skillsPage .skillsContainer span {
   display: block;
 }
 
+.skillsPage .skillsContainer .skillIcon {
+  margin-top: 50px;
+}
+
 .skillsPage .skillsContainer .skillIcon img {
   width: 40px;
   height: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #252525;
 }
 

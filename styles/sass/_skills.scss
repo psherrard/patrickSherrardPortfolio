@@ -27,46 +27,37 @@
         border:2px solid $secondaryLight;
         box-shadow: -25px 25px $primaryDark;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         text-align: center;
+        justify-content: space-evenly;
 
-        .rowOne {
-            display: flex;
-            justify-content: space-around;
-        }
 
-        .rowTwo {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .rowThree {
-            display: flex;
-            justify-content: space-around;
-            // align-items: center;
-        }
-
-        .rowOne,
-        .rowTwo,
-        .rowThree {
-            margin-top: 70px;
+        .columnOne,
+        .columnTwo,
+        .columnThree,
+        .columnFour {
+            margin-top: 10px;
             font-size: 1.5rem;
-            text-align: center;
+            // text-align: center;
+
+
         }
+
 
         span {
             display: block;
         }
 
         .skillIcon {
-           
+            
+            margin-top:50px;
 
             img {
-                 width:40px;
-            height:40px;
+                width:40px;
+                height:40px;
                 // width: 100%;
                 // height: 100%;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 color:$primaryDark;
             }
         }

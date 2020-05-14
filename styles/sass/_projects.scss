@@ -13,8 +13,8 @@
     .projectTwo,
     .projectThree {
         color:$primaryDark;
-        margin-bottom:30px;
-        padding-bottom: 150px;
+        // margin-bottom:10px;
+        // padding-bottom: 150px;
 
 
         // .circle {
@@ -27,12 +27,13 @@
        
 
         h3 {
-            font-size: 3.5rem;
+            font-size: 8rem;
             letter-spacing: 2px;
             margin-left:110px;
             padding-left:30px;
             text-transform: uppercase;
             border-bottom:2px solid transparent;
+            transition: all ease-in 0.15s;
         }
 
         p {
@@ -47,6 +48,8 @@
     .projectOne:hover,
     .projectTwo:hover,
     .projectThree:hover {
+        // margin-bottom:30px;
+        padding-bottom: 250px;
 
         h3 {
             color:$accentColor;

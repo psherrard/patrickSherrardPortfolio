@@ -9,3 +9,21 @@ html {
   margin: 0 auto;
   width: 80%;
 }
+
+button {
+  border:2px solid $secondaryLight;
+  background-color: $primaryLight;
+  box-shadow: -10px 10px $primaryDark;
+  color:$primaryDark;
+  padding:10px 30px;
+  font-family: $fontOne;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  transition: all ease-in 0.15s;
+}
+
+button:hover {
+  background-color: $primaryLight;
+  box-shadow: -10px 10px $accentColor;
+  color:$accentColor;
+}
