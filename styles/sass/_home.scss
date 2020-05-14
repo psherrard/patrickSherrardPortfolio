@@ -1,10 +1,11 @@
 
-header{
-//  background-image:url(../assets/backgroundImage.jpg);
+header {
+    background-image:url(../assets/homeBackground.jpg);
     height:100vh;
-//  background-position: center;
-//  background-size: cover;
+    background-size: cover;
+    // background-position: center;
     font-family:$fontOne;
+    position: relative;
 
     nav,
     h1 {
@@ -13,26 +14,48 @@ header{
 
     h1 {
         font-size:6rem;
+        color:$primaryDark;
     }
 
-    .imgContainer {
-        max-width: 100%;
-        max-height: 100%;
+    h2 {
+        font-size:4rem;
+        color: $accentColor;
+    }
 
-        img {
-            width:50%;
+    ul {
+        display: flex;
+        justify-content: end;
+        padding-top:40px;
+
+        li {
+            margin-left: 40px;
+            font-size: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color:$primaryDark;
+            border-bottom: 2px solid $primaryDark;
+        }
+
+        a:hover {
+            color:$accentColor;
+            border-bottom: 2px solid $accentColor;
         }
     }
 
-    .centerItems {
-        position: relative;
 
-        h1,
-        h2 {
-            position:absolute;
-        }
-    }
+    // .imgContainer {
+    //     max-width: 100%;
+    //     max-height: 100%;
+    //     position: absolute;
+    //     left:100px;
 
+
+    //     img {
+    //         width:50%;
+    //     }
+    // }
 
 
 

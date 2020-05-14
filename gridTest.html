@@ -20,20 +20,36 @@
 
             font-family: 'Teko', sans-serif; */
 
+
+
+            /* "section section section section section section"
+                "section section section section section section"
+                "section section section section section section" */
+
         .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        /* gap: 1px 1px; */
-        /* grid-template-areas: 
-            "gutter null null nav nav gutter" 
-            "gutter content content content null gutter" 
-            ". . . . . ."; */
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* gap: 1px 1px; */
+            /* grid-template-areas: 
+                "header header header header header header"
+                "header header header header header header"
+                "header header header header header header"
+                "section section section section section section"
+                "section section section section section section"
+                "section section section section section section"
+                "section section section section section section"
+                "section section section section section section"
+                "section section section section section section"
+                
+                ; */
         }
+
 
         header {
             /* Maybe need, maybe not!  */
             height:100vh;
+            /* grid-area:header; */
         }
 
         .imgContainer{
@@ -73,7 +89,7 @@
             color:#56B6E0
         }
 
-        /* Design Lines */
+        /* -- Design Lines -- */
 
         .lines {
             width:1px;
@@ -102,19 +118,21 @@
             grid-row: 1/4;
         }
 
-        .lowerHeader{
+
+        .lowerZone{
             grid-column: 2;
             grid-row: 3;
         }
 
-        .zeroOne{
+        .zeroOne,
+        .zeroTwo{
             font-size: 240px;
             font-family: 'Teko', sans-serif;
             color: rgba(163, 163, 163, 0.452);
             margin-left: -55px; 
         }
 
-        .lowerHeader span {
+        .lowerZone span {
             background: linear-gradient(to right,#ffffff 50%, rgba(163, 163, 163, 0.452) 50%); 
             background-clip: text;
             -webkit-background-clip: text;
@@ -123,11 +141,11 @@
             /* margin: 0; */
         }
 
-        .homeText {
+        .lowerText {
             font-size: 40px;
             color:#252525;
             font-family: 'Hammersmith One', sans-serif;
-            letter-spacing: 10px;
+            letter-spacing: 5px;
             margin-top: -120px;
             margin-left:55px;
         }
@@ -141,7 +159,7 @@
             display:flex;
             /* flex-direction: row; */
             justify-content: flex-end;
-            margin-top: 60px;
+            margin:60px 0;
         }
 
         nav li {
@@ -184,6 +202,9 @@
             margin-bottom: 207px;
         }
 
+    .designDefault {
+        position: absolute;
+    }
         
 
 
@@ -193,15 +214,15 @@
 
     </style>
 </head>
-<body>
+<body>    
     <header class="grid-container">
         <!-- Design Lines -->
-            <div class="lines designLines1"></div>
-            <div class="lines designLines2"></div>
-            <div class="lines designLines3"></div>
-            <div class="lines designLines4"></div>
-            <div class="lines designLines5"></div>
-            <div class="lines designLines6"></div>
+        <div class="lines designLines1"></div>
+        <div class="lines designLines2"></div>
+        <div class="lines designLines3"></div>
+        <div class="lines designLines4"></div>
+        <div class="lines designLines5"></div>
+        <div class="lines designLines6"></div>
         <!-- Content  -->
         <nav class="headerNav">
             <ul>
@@ -219,11 +240,11 @@
             <h1>PATRICK SHERRARD</h1>
             <h2>Web Developer</h2>
         </div>
-        <div class="lowerHeader">
+        <div class="lowerZone">
             <div class="zeroOne">
                 <p><span>0</span>1</p>
             </div>
-            <div class="homeText">
+            <div class="lowerText">
                 <p>HOME</p>
             </div>
         </div>
@@ -232,6 +253,30 @@
             <div class="scrollDownLine"></div>
         </div>
     </header>
+    <main class="grid-container" >
+        <!-- Design Lines -->
+        <div class="lines designLines1"></div>
+        <div class="lines designLines2"></div>
+        <div class="lines designLines3"></div>
+        <div class="lines designLines4"></div>
+        <div class="lines designLines5"></div>
+        <div class="lines designLines6"></div> 
+        <div class="lowerZone">
+            <div class="zeroTwo">
+                <p><span>0</span>2</p>
+            </div>
+            <div class="lowerText">
+                <p>About</p>
+    </main>
+    <section class="grid-container">
+        <div class="lines designLines1"></div>
+        <div class="lines designLines2"></div>
+        <div class="lines designLines3"></div>
+        <div class="lines designLines4"></div>
+        <div class="lines designLines5"></div>
+        <div class="lines designLines6"></div>
+
+    </section>
     
 
     
