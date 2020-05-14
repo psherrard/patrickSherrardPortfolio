@@ -493,6 +493,12 @@ header .bottomHeader .designLine {
   text-align: center;
 }
 
+.projectsPage .projectOneInfo .buttons button:focus,
+.projectsPage .projectTwoInfo .buttons button:focus,
+.projectsPage .projectThreeInfo .buttons button:focus {
+  color: red;
+}
+
 .projectsPage .projectFocus {
   width: 100%;
   background-color: blue;
