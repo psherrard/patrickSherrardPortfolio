@@ -235,6 +235,7 @@ header {
   background-image: url(../assets/homeBackground.jpg);
   height: 100vh;
   background-size: cover;
+  background-position: left;
   font-family: "Hammersmith One", sans-serif;
   position: relative;
 }
@@ -242,6 +243,11 @@ header {
 header nav,
 header h1 {
   text-transform: uppercase;
+}
+
+header h1,
+header h2 {
+  letter-spacing: 2px;
 }
 
 header h1 {
@@ -252,6 +258,11 @@ header h1 {
 header h2 {
   font-size: 4rem;
   color: #56B6E0;
+}
+
+header .heading {
+  margin-left: 220px;
+  margin-top: 220px;
 }
 
 header ul {
@@ -278,4 +289,55 @@ header ul a {
 header ul a:hover {
   color: #56B6E0;
   border-bottom: 2px solid #56B6E0;
+}
+
+header .bottomHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 90px;
+  bottom: 65px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header .bottomHeader p {
+  font-size: 1.5rem;
+  -webkit-animation: scrollDown 1s infinite;
+          animation: scrollDown 1s infinite;
+  position: absolute;
+  left: -80px;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    left: -80px;
+  }
+  50% {
+    left: -75px;
+  }
+  100% {
+    left: -80px;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    left: -80px;
+  }
+  50% {
+    left: -75px;
+  }
+  100% {
+    left: -80px;
+  }
+}
+
+header .bottomHeader .designLine {
+  width: 70px;
+  height: 2px;
+  background-color: #252525;
+  margin-top: 6.9px;
+  margin-left: 10px;
 }
