@@ -1,0 +1,53 @@
+.skillsPage {
+    background-image:url(../assets/skillsBackground.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: left;
+    padding-top: 20px;
+    position: relative;
+    font-family:$fontOne;
+
+
+    .pageNumber {
+        color:$primaryDark;
+        position: absolute;
+        letter-spacing: 8px;
+        bottom: 75px;
+        left: 130px;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+    .skillsContainer {
+        background-color: $primaryLight;
+        margin-left: 10%;
+        margin-right: 10%;
+        width:80%;
+        height:450px;
+        border:2px solid $secondaryLight;
+        box-shadow: -25px 25px $primaryDark;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .rowOne {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .rowTwo {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .rowThree {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+}

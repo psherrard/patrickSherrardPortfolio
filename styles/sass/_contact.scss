@@ -1,0 +1,24 @@
+.contactPage {
+    background-image:url(../assets/contactBackground.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: left;
+    padding-top: 50px;
+    position: relative;
+    font-family:$fontOne;
+
+    .pageNumber {
+        color:$primaryDark;
+        position: absolute;
+        letter-spacing: 8px;
+        bottom: 75px;
+        left: 130px;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+}

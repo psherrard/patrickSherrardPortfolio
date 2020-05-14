@@ -411,8 +411,111 @@ header .bottomHeader .designLine {
           flex-direction: column;
 }
 
-.projectsPage div {
+.projectsPage .projects {
   height: 23%;
   width: 200px;
   background-color: red;
+  border: 2px solid grey;
+}
+
+.projectsPage .projectFocus {
+  width: 500px;
+  background-color: blue;
+}
+
+.projectsPage .pageNumber {
+  color: #252525;
+  position: absolute;
+  letter-spacing: 8px;
+  bottom: 75px;
+  left: 130px;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.skillsPage {
+  background-image: url(../assets/skillsBackground.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  padding-top: 20px;
+  position: relative;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.skillsPage .pageNumber {
+  color: #252525;
+  position: absolute;
+  letter-spacing: 8px;
+  bottom: 75px;
+  left: 130px;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.skillsPage .skillsContainer {
+  background-color: #FFFFFF;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 450px;
+  border: 2px solid #D8D8D8;
+  -webkit-box-shadow: -25px 25px #252525;
+          box-shadow: -25px 25px #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.skillsPage .skillsContainer .rowOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skillsPage .skillsContainer .rowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skillsPage .skillsContainer .rowThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skillsPage .skillsContainer span {
+  display: block;
+}
+
+.contactPage {
+  background-image: url(../assets/contactBackground.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  padding-top: 50px;
+  position: relative;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.contactPage .pageNumber {
+  color: #252525;
+  position: absolute;
+  letter-spacing: 8px;
+  bottom: 75px;
+  left: 130px;
+  font-size: 5rem;
+  text-transform: uppercase;
 }
