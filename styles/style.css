@@ -241,7 +241,8 @@ header {
 }
 
 header nav,
-header h1 {
+header h1,
+header .pageNumber {
   text-transform: uppercase;
 }
 
@@ -257,7 +258,8 @@ header h1 {
 
 header h2 {
   font-size: 4rem;
-  color: #56B6E0;
+  color: #82c9e7;
+  margin-top: 5px;
 }
 
 header .heading {
@@ -287,8 +289,17 @@ header ul a {
 }
 
 header ul a:hover {
-  color: #56B6E0;
-  border-bottom: 2px solid #56B6E0;
+  color: #82c9e7;
+  border-bottom: 2px solid #82c9e7;
+}
+
+header .pageNumber {
+  color: #252525;
+  position: absolute;
+  letter-spacing: 8px;
+  bottom: 75px;
+  left: 130px;
+  font-size: 5rem;
 }
 
 header .bottomHeader {
@@ -338,6 +349,70 @@ header .bottomHeader .designLine {
   width: 70px;
   height: 2px;
   background-color: #252525;
-  margin-top: 6.9px;
+  margin-top: 7px;
   margin-left: 10px;
+}
+
+.aboutPage {
+  background-image: url(../assets/aboutBackground.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  padding-top: 100px;
+  position: relative;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.aboutPage img {
+  width: 400px;
+  border: 2px solid #D8D8D8;
+  -webkit-box-shadow: -25px 25px #252525;
+          box-shadow: -25px 25px #252525;
+}
+
+.aboutPage .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutPage .aboutContainer p {
+  font-size: 1.8rem;
+  padding-right: 100px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+.aboutPage .pageNumber {
+  color: #252525;
+  position: absolute;
+  letter-spacing: 8px;
+  bottom: 75px;
+  left: 130px;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.projectsPage {
+  background-image: url(../assets/projectsBackground.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  padding-top: 50px;
+  position: relative;
+  font-family: "Hammersmith One", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectsPage div {
+  height: 23%;
+  width: 200px;
+  background-color: red;
 }

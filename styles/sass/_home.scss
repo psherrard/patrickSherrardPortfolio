@@ -8,7 +8,8 @@ header {
     position: relative;
 
     nav,
-    h1 {
+    h1,
+    .pageNumber {
         text-transform: uppercase;
     }
 
@@ -25,12 +26,12 @@ header {
     h2 {
         font-size:4rem;
         color: $accentColor;
+        margin-top: 5px;
     }
 
     .heading {
         margin-left: 220px;
         margin-top: 220px;
-        // position: absolute;
     }
 
     ul {
@@ -55,11 +56,21 @@ header {
         }
     }
 
+    .pageNumber {
+        color:$primaryDark;
+        position: absolute;
+        letter-spacing: 8px;
+        bottom: 75px;
+        left: 130px;
+        font-size: 5rem;
+        
+    }
+
     .bottomHeader {
         display: flex;
         position: absolute;
         right: 90px;
-        bottom:65px;
+        bottom: 65px;
         transform: rotate(90deg);
 
         p {
@@ -79,7 +90,7 @@ header {
             width:70px;
             height:2px;
             background-color: $primaryDark;
-            margin-top: 6.9px;
+            margin-top: 7px;
             margin-left:10px;
         }
     }
