@@ -9,16 +9,18 @@
     display: flex;
     flex-direction: column;
 
-    .projects {
-        height: 23%;
-        width: 200px;
-        background-color: red;
-        border:2px solid grey;
+    .projectOne,
+    .projectTwo,
+    .projectThree {
+        color:red;
+        margin-bottom:80px;
+        padding-bottom: 50px;
     }
 
     .projectFocus {
-        width:500px;
+        width:100%;
         background-color: blue;
+       
     }
 
     // .projectInfo{

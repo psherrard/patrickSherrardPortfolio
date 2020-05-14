@@ -9,11 +9,40 @@ portfolio = {}
 //hover over this toggle projectOne get projectInfo1 shown
 
 portfolio.projectHover = () => {
-    $(".projectInfo").hide(); 
-    $(".projects").hover(function () {
+    $(".projectOneInfo").hide(); 
+    $(".projectTwoInfo").hide();
+    $(".projectThreeInfo").hide();
+
+    $(".projectOne").hover(function () {
         $(this).toggleClass("projectFocus");
-        console.log('hovered');
-        $(".projectInfo").show();
+        $(".projectOneInfo").show();
+        portfolio.mouseleaveOne();
+    })
+    $(".projectTwo").hover(function () {
+        $(this).toggleClass("projectFocus");
+        $(".projectTwoInfo").show();
+        portfolio.mouseleaveTwo();
+    })
+    $(".projectThree").hover(function () {
+        $(this).toggleClass("projectFocus");
+        $(".projectThreeInfo").show();
+        portfolio.mouseleaveThree();
+    })
+}
+
+portfolio.mouseleaveOne = () =>{
+    $('.projectOne').mouseleave(function(){
+        $(".projectOneInfo").hide();
+    })
+}
+portfolio.mouseleaveTwo = () => {
+    $('.projectTwo').mouseleave(function () {
+        $(".projectTwoInfo").hide();
+    })
+}
+portfolio.mouseleaveThree = () => {
+    $('.projectThree').mouseleave(function () {
+        $(".projectThreeInfo").hide();
     })
 }
 
@@ -25,3 +54,14 @@ $(function () {
     portfolio.init();
 });
 
+
+
+
+// portfolio.projectHover = () => {
+//     $(".projectInfo").hide();
+//     $(".projects").hover(function () {
+//         $(this).toggleClass("projectFocus");
+//         console.log('hovered');
+//         $(".projectInfo").show();
+//     })
+// }
