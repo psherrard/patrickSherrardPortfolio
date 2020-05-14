@@ -274,7 +274,7 @@ header ul {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   padding-top: 40px;
 }
 
@@ -420,6 +420,15 @@ header .bottomHeader .designLine {
   padding-bottom: 50px;
 }
 
+.projectsPage .projectOneInfo {
+  position: absolute;
+  right: 120px;
+}
+
+.projectsPage .projectOneInfo .buttons {
+  text-align: center;
+}
+
 .projectsPage .projectFocus {
   width: 100%;
   background-color: blue;
@@ -440,7 +449,7 @@ header .bottomHeader .designLine {
   height: 100vh;
   background-size: cover;
   background-position: left;
-  padding-top: 20px;
+  padding-top: 40px;
   position: relative;
   font-family: "Hammersmith One", sans-serif;
 }
@@ -498,8 +507,23 @@ header .bottomHeader .designLine {
       justify-content: space-around;
 }
 
+.skillsPage .skillsContainer .rowOne,
+.skillsPage .skillsContainer .rowTwo,
+.skillsPage .skillsContainer .rowThree {
+  margin-top: 70px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .skillsPage .skillsContainer span {
   display: block;
+}
+
+.skillsPage .skillsContainer .skillIcon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  color: #252525;
 }
 
 .contactPage {

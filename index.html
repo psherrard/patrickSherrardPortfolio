@@ -84,34 +84,58 @@
                 <!-- flex row each row then flex parent in column -->
                 <!-- maybe put all in divs? -->
                 <div class="rowOne">
-                    <!-- icon -->
-                    <p>HTML5</p>
-                    <!-- icon -->
-                    <p>CSS3</p>
-                    <!-- icon -->
-                    <p>Jquery</p>
-                    <!-- icon -->
-                    <p>React</p>
+                    <div class="skillIcon">
+                        <img src="./assets/html-5.svg" alt="">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/css-3.svg" alt="">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/jquery.svg" alt="">
+                        <p>Jquery</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/react.svg" alt="">
+                        <p>React</p>
+                    </div>
                 </div>
                 <div class="rowTwo">
-                    <!-- icon -->
-                    <p>Github</p>
-                    <!-- icon -->
-                    <p>VS code</p>
-                    <!-- icon -->
-                    <p>Git</p>
-                    <!-- icon -->
-                    <p>Javascript</p>
+                    <div class="skillIcon">
+                        <img src="./assets/github-icon.svg" alt="">
+                        <p>Github</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/visual-studio-code.svg" alt="">
+                        <p>VS code</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/git-icon.svg" alt="">
+                        <p>Git</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/javascript.svg" alt="">
+                        <p>Javascript</p>
+                    </div>
                 </div>
                 <div class="rowThree">
-                    <!-- icon -->
-                    <p><span>Adobe</span> Photoshop</p>
-                    <!-- icon -->
-                    <p><span>Adobe</span> InDesign</p>
-                    <!-- icon -->
-                    <p>SASS</p>
-                    <!-- icon -->
-                    <p>Firebase</p>
+                    <div class="skillIcon">
+                        <!-- icon -->
+                        <p><span>Adobe</span> Photoshop</p>
+                    </div>
+                    <div class="skillIcon">
+                        <!-- icon -->
+                        <p><span>Adobe</span> InDesign</p>
+                    </div>
+                    <div class="skillIcon">
+                        <img src="./assets/sass.svg" alt="">
+                        <p>SASS</p>
+                    </div>
+                    <di class="skillIcon"v>
+                        <img src="./assets/firebase.svg" alt="">
+                        <p>Firebase</p>
+                    </div>
                 </div>
             </div>
             <p class="pageNumber">Skills</p>
@@ -119,6 +143,23 @@
         <section class="contactPage" id="contact">
             <!-- show my phone number and email -->
             <!-- Form with name email and message -->
+            <!-- Use phone and email icon -->
+            <h3>Phone: 416-908-5910
+            <h3>Email: patsherrard@gmail.com</h3>
+            </h3>
+            <form action="#">
+                <div class="nameEmail">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
             <p class="pageNumber">Contact</p>
         </section>
     </main>

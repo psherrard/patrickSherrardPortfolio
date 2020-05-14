@@ -17,10 +17,18 @@
         padding-bottom: 50px;
     }
 
+    .projectOneInfo {
+        position: absolute;
+        right:120px;
+
+        .buttons {
+            text-align: center;
+        }
+    }
+
     .projectFocus {
         width:100%;
         background-color: blue;
-       
     }
 
     // .projectInfo{

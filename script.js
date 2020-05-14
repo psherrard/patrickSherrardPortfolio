@@ -14,23 +14,23 @@ portfolio.projectHover = () => {
     $(".projectThreeInfo").hide();
 
     $(".projectOne").hover(function () {
-        $(this).toggleClass("projectFocus");
+
         $(".projectOneInfo").show();
         portfolio.mouseleaveOne();
     })
     $(".projectTwo").hover(function () {
-        $(this).toggleClass("projectFocus");
+
         $(".projectTwoInfo").show();
         portfolio.mouseleaveTwo();
     })
     $(".projectThree").hover(function () {
-        $(this).toggleClass("projectFocus");
+
         $(".projectThreeInfo").show();
         portfolio.mouseleaveThree();
     })
 }
 
-portfolio.mouseleaveOne = () =>{
+portfolio.mouseleaveOne = () => {
     $('.projectOne').mouseleave(function(){
         $(".projectOneInfo").hide();
     })
