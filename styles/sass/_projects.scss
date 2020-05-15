@@ -16,7 +16,7 @@
         // padding-bottom: 30px;
 
         h3 {
-            font-size: 8rem;
+            font-size: 4rem;
             letter-spacing: 2px;
             margin-left:110px;
             padding-left:30px;
@@ -30,10 +30,11 @@
         }
     }
 
+    // Maybe on click for jquery?
     .projectOne:hover,
     .projectTwo:hover,
     .projectThree:hover {
-        padding-bottom: 250px;
+        // padding-bottom: 250px;
 
         h3 {
             color:$accentColor;
@@ -46,15 +47,24 @@
     .projectThreeInfo {
         position: absolute;
         margin-top:20px;
-        right:120px;
+        right:130px;
 
-        .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
             text-align: center;
-
-            button:focus{
-                color:red;
-            }
+            margin-bottom: 10px;
         }
+
+        button {
+            margin-top:10px;
+            margin-right:20px;
+        }
+        
+     
     }
 
     .projectFocus {

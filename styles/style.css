@@ -450,7 +450,7 @@ header .bottomHeader .designLine {
 .projectsPage .projectOne h3,
 .projectsPage .projectTwo h3,
 .projectsPage .projectThree h3 {
-  font-size: 8rem;
+  font-size: 4rem;
   letter-spacing: 2px;
   margin-left: 110px;
   padding-left: 30px;
@@ -466,12 +466,6 @@ header .bottomHeader .designLine {
   font-size: 1.5rem;
 }
 
-.projectsPage .projectOne:hover,
-.projectsPage .projectTwo:hover,
-.projectsPage .projectThree:hover {
-  padding-bottom: 250px;
-}
-
 .projectsPage .projectOne:hover h3,
 .projectsPage .projectTwo:hover h3,
 .projectsPage .projectThree:hover h3 {
@@ -484,19 +478,34 @@ header .bottomHeader .designLine {
 .projectsPage .projectThreeInfo {
   position: absolute;
   margin-top: 20px;
-  right: 120px;
+  right: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projectsPage .projectOneInfo .buttons,
-.projectsPage .projectTwoInfo .buttons,
-.projectsPage .projectThreeInfo .buttons {
+.projectsPage .projectOneInfo p,
+.projectsPage .projectTwoInfo p,
+.projectsPage .projectThreeInfo p {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.projectsPage .projectOneInfo .buttons button:focus,
-.projectsPage .projectTwoInfo .buttons button:focus,
-.projectsPage .projectThreeInfo .buttons button:focus {
-  color: red;
+.projectsPage .projectOneInfo button,
+.projectsPage .projectTwoInfo button,
+.projectsPage .projectThreeInfo button {
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 .projectsPage .projectFocus {

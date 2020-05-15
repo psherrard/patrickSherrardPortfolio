@@ -15,6 +15,9 @@ portfolio = {}
 //.css("propertyname","value");
 
 
+//MAYBE use on click so it works on mobile????
+
+
 
 
 portfolio.projectHover = () => {
@@ -23,37 +26,39 @@ portfolio.projectHover = () => {
     $(".projectThreeInfo").hide();
 
     
-    $(".projectOne").hover(function () {
+    $(".projectOne").mouseenter(function () {
         $(".projectOneInfo").slideDown("fast");
+        $(".projectOne").css("padding-bottom", "250px");
         portfolio.mouseleaveOne();
     })
     
-    // $(".projectOne").hover(function () {
-    //     $(".projectOneInfo").slideDown("fast");
-    //     portfolio.mouseleaveOne();
-    // })
-    $(".projectTwo").hover(function () {
+    $(".projectTwo").mouseenter(function () {
         $(".projectTwoInfo").slideDown("fast");
+        $(".projectTwo").css("padding-bottom", "250px");
         portfolio.mouseleaveTwo();
     })
-    $(".projectThree").hover(function () {
+    $(".projectThree").mouseenter(function () {
         $(".projectThreeInfo").slideDown("fast");
+        $(".projectThree").css("padding-bottom", "250px");
         portfolio.mouseleaveThree();
     })
 }
 
 portfolio.mouseleaveOne = () => {
     $('.projectOne').mouseleave(function(){
+        $(".projectOne").css("padding-bottom", "0px");
         $(".projectOneInfo").hide();
     })
 }
 portfolio.mouseleaveTwo = () => {
     $('.projectTwo').mouseleave(function () {
+        $(".projectTwo").css("padding-bottom", "0px");
         $(".projectTwoInfo").hide();
     })
 }
 portfolio.mouseleaveThree = () => {
     $('.projectThree').mouseleave(function () {
+        $(".projectThree").css("padding-bottom", "0px");
         $(".projectThreeInfo").hide();
     })
 }
