@@ -27,3 +27,7 @@ button:hover {
   box-shadow: -10px 10px $accentColor;
   color:$accentColor;
 }
+
+button:active {
+  box-shadow: -5px 5px $accentColor;
+}

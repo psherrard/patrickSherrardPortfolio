@@ -36,7 +36,7 @@
             <div class="aboutContainer wrapper">   
                 <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non vero eveniet perferendis deserunt. Nobis porro deleniti eius consequatur corrupti, praesentium ab voluptatem earum tempore molestias officiis? Sed qui facilis numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nostrum recusandae. Consectetur</p>
-                    <a href="./assets/patrickSherrardResume.pdf"><button>My Resume</button></a>
+                    <a href="./assets/patrickSherrardResume.pdf" target="_blank"><button>My Resume</button></a>
                 </div>
                 <div class="imgContainer">
                     <img src="./assets/horse.jpg" alt="A picture of me, Patrick Sherrard">
@@ -49,31 +49,30 @@
                 <h3>Weather Synth</h3>
                 <div class="circle"></div>
                 <div class="projectOneInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, sit reiciendis incidunt voluptate similique?</p>
+                    <p><span>This synth uses the MetaWeather API to collect real time data</span> from different cities and converts that data into notes
+                    with the help of Tone.js. </p>
                     <p>React | API | SASS | Tone.js</p>
                     <div class="buttons">
-                        <button>view live</button>
-                        <button>view code</button>
+                        <a href="https://psherrard.github.io/patrickSherrardProject5/" target="_blank"><button>view live</button></a>
+                        <a href="https://github.com/psherrard/patrickSherrardProject5" target="_blank"><button>view code</button></a>
                     </div>
                 </div>
             </div>
             <div class="projectTwo">
                 <h3 tabindex='0'>Space and Memory Game</h3>
                 <div class="projectTwoInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, sit reiciendis incidunt voluptate
-                        similique?</p>
+                    <p>A space themed memory game that is fun, interactive and fully accessable. </p>
                     <p>Javascript | Jquery | SASS | HTML </p>
                     <div class="buttons">
-                        <button>view live</button>
-                        <button>view code</button>
+                        <a href="https://psherrard.github.io/patrickSherrardProjectThree/" target="_blank"><button>view live</button></a>
+                        <a href="https://github.com/psherrard/patrickSherrardProjectThree" target="_blank"><button>view code</button></a>
                     </div>
                 </div>
             </div>
             <div class="projectThree">
-                <h3>Creative PSD Conversion</h3>
+                <h3>Clinet PSD Conversion</h3>
                 <div class="projectThreeInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, sit reiciendis incidunt voluptate
-                        similique?</p>
+                    <p><span>Creative is a multi-page and full responsive PSD conversion of a 'blank' website.</span> Built with attention to deal being the primary focus.  </p>
                     <p>HTML | SASS </p>
                     <div class="buttons">
                         <button>view live</button>
@@ -85,9 +84,6 @@
         </section>
         <section class="skillsPage" id="skills">
             <div class="skillsContainer">
-                <!-- add border and boxshadow -->
-                <!-- flex row each row then flex parent in column -->
-                <!-- maybe put all in divs? -->
                 <div class="columnOne">
                     <div class="skillIcon">
                         <img src="./assets/html-5.svg" alt="">
@@ -151,22 +147,30 @@
             <!-- show my phone number and email -->
             <!-- Form with name email and message -->
             <!-- Use phone and email icon -->
-            <h3>Phone: 416-908-5910
-            <h3>Email: patsherrard@gmail.com</h3>
-            </h3>
-            <form action="#">
-                <div class="nameEmail">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Email">
+            <div class="wrapper contactContainer">
+                <div class="contactInfo">
+                    <h3>Phone : 416-908-5910</h3>
+                    <h3>Email : patsherrard@gmail.com</h3>
+                    <!--  twitter -->
+                    <!-- git linkedin -->
+                    <!-- github -->
                 </div>
-                <div class="message">
-                    <label for="message"></label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="form-box">
+                    <form action="">
+                        <div class="form-top">
+                            <label class="visuallyHidden" for="name">Email</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name...">
+                            <label class="visuallyHidden" for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-bottom">
+                            <label for="message"></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Get in touch!"></textarea>
+                        </div>
+                        <button type="submit">Submit Comment</button>
+                    </form>
                 </div>
-                <input type="submit" value="Submit">
-            </form>
+            </div>
             <p class="pageNumber">Contact</p>
         </section>
     </main>
