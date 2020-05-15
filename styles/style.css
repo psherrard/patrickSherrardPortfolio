@@ -508,12 +508,14 @@ header .bottomHeader .designLine {
   text-align: center;
   margin-bottom: 10px;
   line-height: 20px;
+  width: 100%;
 }
 
 .projectsPage .projectOneInfo p span,
 .projectsPage .projectTwoInfo p span,
 .projectsPage .projectThreeInfo p span {
   display: block;
+  width: 100%;
 }
 
 .projectsPage .projectOneInfo button,
@@ -742,10 +744,14 @@ header .bottomHeader .designLine {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  header ul li {
+    margin-left: 0px;
+  }
   header .heading {
     margin-left: 62px;
   }
   .aboutPage {
+    padding-top: 50px;
     background-image: url(../assets/aboutBackgroundMobile.jpg);
   }
   .aboutPage .aboutContainer {
@@ -761,6 +767,7 @@ header .bottomHeader .designLine {
   }
   .aboutPage .aboutContainer p {
     padding-right: 0px;
+    text-align: center;
   }
   .aboutPage .aboutContainer .textButton {
     display: -webkit-box;
@@ -775,6 +782,58 @@ header .bottomHeader .designLine {
             align-items: center;
   }
   .aboutPage .aboutContainer img {
-    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 30px;
+  }
+  .projectsPage {
+    background-image: url(../assets/aboutBackgroundMobile.jpg);
+  }
+  .projectsPage .projectOne h3,
+  .projectsPage .projectTwo h3,
+  .projectsPage .projectThree h3 {
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+  .projectsPage .projectOne p,
+  .projectsPage .projectTwo p,
+  .projectsPage .projectThree p {
+    font-size: 1.5rem;
+  }
+  .projectsPage .projectOneInfo,
+  .projectsPage .projectTwoInfo,
+  .projectsPage .projectThreeInfo {
+    width: 100%;
+    right: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .projectsPage .projectOneInfo p span,
+  .projectsPage .projectTwoInfo p span,
+  .projectsPage .projectThreeInfo p span {
+    display: unset;
+  }
+  .skillsPage {
+    background-image: url(../assets/aboutBackgroundMobile.jpg);
+  }
+  .contactPage {
+    background-image: url(../assets/aboutBackgroundMobile.jpg);
+  }
+}
+
+@media (max-width: 635px) {
+  .contactPage .contactContainer {
+    margin-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPage .contactContainer .contactInfo {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .contactPage .form-box textarea {
+    line-height: 14px;
   }
 }

@@ -77,12 +77,16 @@
         }
 
     }
-
+    // Header
     header {
         background-image: $homePageMobile;
 
         ul {
             justify-content: space-evenly;
+
+            li {
+                margin-left:0px;
+            }
         }
 
         .heading {
@@ -96,7 +100,9 @@
         // }
     }
 
+    //About Page
     .aboutPage {
+        padding-top: 50px;
         background-image: $aboutPageMobile;
 
         .aboutContainer {
@@ -106,6 +112,7 @@
 
             p {
                 padding-right: 0px;
+                text-align: center;
             }
 
             .textButton{
@@ -116,10 +123,81 @@
             }
 
             img {
-                text-align: center;
+                margin-left:35%;
+                margin-bottom:30px;
+            }
+        }
+    }
+
+    //Projects Page 
+
+    .projectsPage {
+        background-image: $projectsPageMobile;
+
+        .projectOne,
+        .projectTwo,
+        .projectThree {
+            h3 {
+                margin-left:0px;
+                padding-left:20px;
+            }
+    
+            p {
+                font-size:1.5rem;
+                // width:100%;
             }
         }
 
-        
+        .projectOneInfo,
+        .projectTwoInfo,
+        .projectThreeInfo {
+            width:100%;
+            right:0px;
+            padding-right:20px;
+            padding-left: 20px;
+
+            p {
+                span {
+                    display: unset;
+                }
+            }
+        }
+    }
+
+
+    //Skills Page
+    .skillsPage {
+       background-image: $skillsPageMobile; 
+    }
+
+    //Contact Page
+    .contactPage {
+        background-image: $contactPageMobile;
+    }
+}
+
+@media (max-width:635px){
+
+    //Contact Page 
+    .contactPage {
+        // padding-top: 0px;
+        .contactContainer{
+            margin-top: 0px;
+            flex-direction: column;
+
+            .contactInfo {
+                width:100%;
+                margin-top: 0px;
+                margin-bottom: 30px;
+    
+            }
+        }
+        .form-box {
+
+            textarea {
+                line-height: 14px;
+            }
+
+        }
     }
 }
