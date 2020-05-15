@@ -1,6 +1,6 @@
 
 header {
-    background-image:url(../assets/homeBackground.jpg);
+    background-image:$homePage;
     height:100vh;
     background-size: cover;
     background-position: left;
@@ -52,10 +52,12 @@ header {
             text-decoration: none;
             color:$primaryDark;
             border-bottom: 2px solid $primaryDark;
+            padding-bottom: 4px;
         }
 
         a:hover {
             color:$accentColor;
+            padding-bottom: 0px;
             border-bottom: 2px solid $accentColor;
         }
     }

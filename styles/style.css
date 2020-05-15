@@ -317,10 +317,12 @@ header ul a {
   text-decoration: none;
   color: #252525;
   border-bottom: 2px solid #252525;
+  padding-bottom: 4px;
 }
 
 header ul a:hover {
   color: #82c9e7;
+  padding-bottom: 0px;
   border-bottom: 2px solid #82c9e7;
 }
 
@@ -483,7 +485,8 @@ header .bottomHeader .designLine {
 .projectsPage .projectThreeInfo {
   position: absolute;
   margin-top: 20px;
-  right: 130px;
+  text-align: center;
+  right: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,6 +546,7 @@ header .bottomHeader .designLine {
   padding-top: 40px;
   position: relative;
   font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
 }
 
 .skillsPage .pageNumber {
@@ -552,7 +556,6 @@ header .bottomHeader .designLine {
   bottom: 75px;
   left: 130px;
   font-size: 5rem;
-  text-transform: uppercase;
 }
 
 .skillsPage .skillsContainer {
@@ -590,8 +593,8 @@ header .bottomHeader .designLine {
 }
 
 .skillsPage .skillsContainer .skillIcon img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   margin-bottom: 20px;
   color: #252525;
 }
@@ -610,19 +613,26 @@ header .bottomHeader .designLine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 80px;
 }
 
 .contactPage .contactInfo {
   width: 45%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 120px;
   margin-right: 60px;
+  margin-top: 20px;
   text-transform: lowercase;
 }
 
 .contactPage .contactInfo h3 {
   margin-bottom: 30px;
+}
+
+.contactPage .contactInfo .fab {
+  font-size: 2.5rem;
+  color: #252525;
+  margin: 0 10px;
 }
 
 .contactPage .form-top {
@@ -634,7 +644,6 @@ header .bottomHeader .designLine {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
-  margin-top: 100px;
 }
 
 .contactPage textarea {
@@ -657,6 +666,7 @@ header .bottomHeader .designLine {
   line-height: 24px;
   font-size: 1.5rem;
   text-transform: lowercase;
+  color: #252525;
 }
 
 .contactPage .form-box input[type="text"] {
@@ -675,4 +685,96 @@ header .bottomHeader .designLine {
   left: 130px;
   font-size: 5rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1445px) {
+  header .pageNumber,
+  .aboutPage .pageNumber,
+  .projectsPage .pageNumber,
+  .skillsPage .pageNumber,
+  .contactPage .pageNumber {
+    bottom: 85px;
+    left: 130px;
+  }
+}
+
+@media (max-width: 1075px) {
+  .aboutPage .aboutContainer p {
+    font-size: 1.5rem;
+  }
+  .aboutPage button {
+    margin-top: 20px;
+  }
+  .aboutPage img {
+    width: 310px;
+  }
+}
+
+@media (max-width: 860px) {
+  .aboutPage .aboutContainer p {
+    font-size: 1.3rem;
+    line-height: 23px;
+    padding-right: 45px;
+  }
+  .aboutPage img {
+    width: 220px;
+  }
+  .projectOneInfo,
+  .projectTwoInfo,
+  .projectThreeInfo {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 760px) {
+  header .pageNumber,
+  .aboutPage .pageNumber,
+  .projectsPage .pageNumber,
+  .skillsPage .pageNumber,
+  .contactPage .pageNumber {
+    display: none;
+  }
+  header {
+    background-image: url(../assets/homeBackgroundMobile.jpg);
+  }
+  header ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .heading {
+    margin-left: 62px;
+  }
+  .aboutPage {
+    background-image: url(../assets/aboutBackgroundMobile.jpg);
+  }
+  .aboutPage .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .aboutPage .aboutContainer p {
+    padding-right: 0px;
+  }
+  .aboutPage .aboutContainer .textButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutPage .aboutContainer img {
+    text-align: center;
+  }
 }

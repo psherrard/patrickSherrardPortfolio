@@ -1,0 +1,125 @@
+@media(max-width:1445px) {
+    // Page Numbers
+    header,
+    .aboutPage,
+    .projectsPage,
+    .skillsPage,
+    .contactPage {
+        .pageNumber {
+            bottom: 85px;
+            left: 130px;
+           
+        }
+
+    }
+}
+
+
+@media (max-width:1075px) {
+    //About Page
+    .aboutPage {
+        
+        .aboutContainer{
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        button {
+            margin-top:20px;
+        }
+
+        img {
+            width:310px;
+        }
+        
+    }   
+}
+
+@media(max-width:860px) {
+    //About Page
+    .aboutPage {
+        
+        .aboutContainer{
+
+            p {
+                font-size: 1.3rem;
+                line-height: 23px;
+                padding-right:45px;
+            }
+        }
+
+        img {
+            width:220px;
+        }
+    }   
+
+    // Projects Page
+    .projectOneInfo,
+    .projectTwoInfo,
+    .projectThreeInfo {
+        margin-left:220px
+    }
+}
+
+@media (max-width:760px){
+
+    //Page Number 
+     header,
+    .aboutPage,
+    .projectsPage,
+    .skillsPage,
+    .contactPage {
+        .pageNumber {
+            display: none;
+           
+        }
+
+    }
+
+    header {
+        background-image: $homePageMobile;
+
+        ul {
+            justify-content: space-evenly;
+        }
+
+        .heading {
+            margin-left:62px;
+        }
+
+        // .bottomHeader {
+        //     height:5%;
+        //     margin-top:47.5%;
+        //     margin-bottom:47.5%;
+        // }
+    }
+
+    .aboutPage {
+        background-image: $aboutPageMobile;
+
+        .aboutContainer {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content:center ;
+
+            p {
+                padding-right: 0px;
+            }
+
+            .textButton{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            img {
+                text-align: center;
+            }
+        }
+
+        
+    }
+}

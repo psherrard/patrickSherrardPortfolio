@@ -1,8 +1,6 @@
 // Fonts
 
 $fontOne:'Hammersmith One', sans-serif;
-// $fontTwo:;
-
 
 // Colors
 
@@ -14,3 +12,22 @@ $secondaryDark:#B7B7B7;
 $secondaryLight:#D8D8D8;
 
 $accentColor:rgb(130, 201, 231);
+
+//Backgrounds Desktop
+
+$homePage:url(../assets/homeBackground.jpg);
+$aboutPage:url(../assets/aboutBackground.jpg);
+$skillsPage:url(../assets/skillsBackground.jpg);
+$projectsPage:url(../assets/projectsBackground.jpg);
+$contactPage:url(../assets/contactBackground.jpg);
+
+
+
+
+//Backgrounds Mobile 
+
+$homePageMobile:url(../assets/homeBackgroundMobile.jpg);
+$aboutPageMobile:url(../assets/aboutBackgroundMobile.jpg);
+$skillsPageMobile:url(../assets/skillsBackground.jpg);
+$projectsPageMobile:url(../assets/projectsBackground.jpg);
+$contactPageMobile:url(../assets/contactBackground.jpg);

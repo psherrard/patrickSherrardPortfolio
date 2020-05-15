@@ -27,18 +27,18 @@ portfolio.projectHover = () => {
 
     
     $(".projectOne").mouseenter(function () {
-        $(".projectOneInfo").slideDown("fast");
+        $(".projectOneInfo").slideDown(300);
         $(".projectOne").css("padding-bottom", "250px");
         portfolio.mouseleaveOne();
     })
     
     $(".projectTwo").mouseenter(function () {
-        $(".projectTwoInfo").slideDown("fast");
+        $(".projectTwoInfo").slideDown(300);
         $(".projectTwo").css("padding-bottom", "250px");
         portfolio.mouseleaveTwo();
     })
     $(".projectThree").mouseenter(function () {
-        $(".projectThreeInfo").slideDown("fast");
+        $(".projectThreeInfo").slideDown(300);
         $(".projectThree").css("padding-bottom", "250px");
         portfolio.mouseleaveThree();
     })

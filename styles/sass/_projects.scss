@@ -1,5 +1,5 @@
 .projectsPage {
-    background-image:url(../assets/projectsBackground.jpg);
+    background-image:$projectsPage;
     height:100vh;
     background-size: cover;
     background-position: left;
@@ -30,11 +30,9 @@
         }
     }
 
-    // Maybe on click for jquery?
     .projectOne:hover,
     .projectTwo:hover,
     .projectThree:hover {
-        // padding-bottom: 250px;
 
         h3 {
             color:$accentColor;
@@ -47,7 +45,9 @@
     .projectThreeInfo {
         position: absolute;
         margin-top:20px;
-        right:130px;
+        text-align: center;
+        right:200px;
+        
 
         display: flex;
         flex-direction: column;
