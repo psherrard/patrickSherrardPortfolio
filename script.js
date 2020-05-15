@@ -63,8 +63,20 @@ portfolio.mouseleaveThree = () => {
     })
 }
 
+
+// portfolio.hideSideNav = () => {
+//     $('.sideNav').hide();
+// }
+
+portfolio.displaySideNav = () => {
+  
+ 
+}
+
 portfolio.init = () => {
     portfolio.projectHover();
+    // portfolio.hideSideNav();
+    portfolio.displaySideNav();
 };
 
 $(function () {
