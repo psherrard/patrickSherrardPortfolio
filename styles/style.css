@@ -412,7 +412,6 @@ header .bottomHeader .designLine {
 .aboutPage .aboutContainer p {
   font-size: 1.8rem;
   padding-right: 100px;
-  letter-spacing: 2px;
   line-height: 30px;
   margin-top: 25px;
 }
@@ -750,6 +749,9 @@ header .bottomHeader .designLine {
   header .heading {
     margin-left: 62px;
   }
+  header .bottomHeader {
+    display: none;
+  }
   .aboutPage {
     padding-top: 50px;
     background-image: url(../assets/aboutBackgroundMobile.jpg);
@@ -835,5 +837,52 @@ header .bottomHeader .designLine {
   }
   .contactPage .form-box textarea {
     line-height: 14px;
+  }
+}
+
+@media (max-width: 565px) {
+  .aboutPage .aboutContainer img {
+    margin-left: 20%;
+    margin-bottom: 30px;
+  }
+  .projectsPage .projectOne h3,
+  .projectsPage .projectTwo h3,
+  .projectsPage .projectThree h3 {
+    font-size: 2.6rem;
+  }
+  .projectsPage .projectOne p,
+  .projectsPage .projectTwo p,
+  .projectsPage .projectThree p {
+    font-size: 1.2rem;
+  }
+  .skillsPage {
+    padding-top: 0px;
+    margin-top: -220px;
+  }
+  .skillsPage .skillIcon {
+    margin-top: 100px;
+  }
+  .skillsPage .skillIcon p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header .heading {
+    margin-left: 25px;
+  }
+  header .heading h1 {
+    font-size: 3.9rem;
+  }
+  header .heading h2 {
+    font-size: 3rem;
+  }
+  .aboutPage .aboutContainer img {
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+  .skillsPage .skillsContainer .skillIcon img {
+    width: 40px;
+    height: 40px;
   }
 }

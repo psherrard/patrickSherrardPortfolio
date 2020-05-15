@@ -93,11 +93,9 @@
             margin-left:62px;
         }
 
-        // .bottomHeader {
-        //     height:5%;
-        //     margin-top:47.5%;
-        //     margin-bottom:47.5%;
-        // }
+        .bottomHeader {
+            display: none;
+        }
     }
 
     //About Page
@@ -200,4 +198,101 @@
 
         }
     }
+}
+
+@media (max-width:565px){
+
+    //About Page
+    .aboutPage {
+
+        .aboutContainer {
+    
+            img {
+                margin-left:20%;
+                margin-bottom:30px;
+            }
+        }
+    }
+
+    //Project Page
+    .projectsPage {
+    
+        .projectOne,
+        .projectTwo,
+        .projectThree{
+
+            h3 {
+                font-size: 2.6rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    //Skills Page 
+    .skillsPage {
+        padding-top:0px;
+        margin-top:-220px;
+
+
+        .skillIcon {
+
+            margin-top: 100px;
+
+            p {
+                font-size:1rem;
+            }
+        }
+
+    
+    }
+}
+
+@media (max-width:400px) {
+
+    //Home Page
+    header {
+
+        .heading {
+            margin-left:25px;
+
+            h1 {
+                font-size: 3.9rem;
+            }
+
+            h2 {
+              font-size:3rem;
+            }
+        }
+    }
+
+    //About Page
+    .aboutPage {
+
+        .aboutContainer {
+    
+            img {
+                margin-left:10%;
+                margin-bottom:30px;
+            }
+        }
+    }
+
+
+    //Skills Page 
+
+    .skillsPage {
+
+        .skillsContainer {
+            
+            .skillIcon img {
+            width: 40px;
+            height: 40px;
+    
+            } 
+        }
+    }
+
 }
